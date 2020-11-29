@@ -9,11 +9,12 @@ const Product = ({product}) => {
         <a href={`/product/${product._id}`}>
           <Card.Img src={product.image} variant='top'/>
         </a>
+        <Card.Body>
+        <a href={`/product/${product._id}`}>
+        </a>
+      </Card.Body>
     </Card>
-
-  )
-     
-   
+  )  
 }
 
 export default Product

@@ -41,20 +41,27 @@ const products = [
     description: 'Adrien Barry, Glasgow, Portrait',
     category: 'Portrait'
   },
-  // {
-  //   _id: '7',
-  //   name: 'Gary Beadle',
-  //   image: '/images/w7.jpg',
-  //   description: 'Gary Beadle, Glasgow, Portrait',
-  //   category: 'Portrait'
-  // },
-  // {
-  //   _id: '8',
-  //   name: 'Kirsty',
-  //   image: '/images/w8.jpg',
-  //   description: 'Kirsty, Glasgow, Portrait',
-  //   category: 'Portrait'
-  // },
+  {
+    _id: '7',
+    name: 'Gary Beadle',
+    image: '/images/w7.jpg',
+    description: 'Gary Beadle, Glasgow, Portrait',
+    category: 'Portrait'
+  },
+  {
+    _id: '8',
+    name: 'Kirsty',
+    image: '/images/w8.jpg',
+    description: 'Kirsty, Glasgow, Portrait',
+    category: 'Portrait'
+  },
+  {
+    _id: '8',
+    name: 'Kirsty',
+    image: '/images/w8.jpg',
+    description: 'Kirsty, Glasgow, Portrait',
+    category: 'Portrait'
+  },
 ]
 
 export default products
