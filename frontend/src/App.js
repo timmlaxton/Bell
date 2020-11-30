@@ -5,6 +5,8 @@ import Header from './components/Header';
 import SideNav from './components/SideNav'
 import LandingScreen from './screens/LandingScreen'
 import HomeScreen from './screens/HomeScreen'
+import PrintScreen from './screens/PrintScreen'
+import ProductScreen from './screens/ProductScreen'
 
 const App = () => {
   return (
@@ -13,9 +15,11 @@ const App = () => {
      
       <Footer/>
       <Header/>
-      <Route path='/homescreen' component={HomeScreen} exact />
+      <Route path='/prints' component={PrintScreen}  />
+      <Route path='/product/:id' component={ProductScreen}  />
       <SideNav />
-      <Route path='/' component={LandingScreen} exact />
+      <Route path='/' component={LandingScreen} exact  />
+      <Route path='/homescreen' component={HomeScreen} exact  />
       </Router>
   )
 }

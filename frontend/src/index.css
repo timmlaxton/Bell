@@ -89,10 +89,18 @@ body {
     height: auto;
 }
 
+
+.homeimage {
+  position: absolute;
+  left: 25%;
+  top: 32%;
+  
+}
+
 .landingtext{
   position: absolute;
-   top: 370px;
-   left: 50px;
+   top: 400px;
+   left: 30px;
    width: 100%;
    margin: 0 auto;
    width: 300px;
@@ -103,12 +111,14 @@ body {
 
 .btn {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 90%;
+  left: 60%;
+  width: 150px;
+  height: 50px;
+  border:none;
+  
+  background: rgba(255, 255, 255,0);
+  font-size: 25px;
   color: white;
-  font-size: 16px;
-  padding: 12px 24px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
 }
+
