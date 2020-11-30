@@ -37,7 +37,7 @@ const products = [
   {
     _id: '6',
     name: 'Adrien Barry',
-    image: '/images/w6.jpg',
+    image: '/images/w66.jpg',
     description: 'Adrien Barry, Glasgow, Portrait',
     category: 'Portrait'
   },

@@ -1,3 +1,6 @@
+@import "react-alice-carousel/lib/alice-carousel.css";
+
+
 * {
   box-sizing: border-box;
 }
@@ -122,3 +125,17 @@ body {
   color: white;
 }
 
+/* .b-refs-buttons{
+  position: absolute;
+  left: 100px;
+  top: 230px;
+} */
+
+.prev-button {
+  
+  margin-left: 300px;
+}
+
+.next-button{
+  margin-left: 300px;
+}
