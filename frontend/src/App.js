@@ -14,13 +14,13 @@ const App = () => {
    
       <Router>
      
-      {/* <Footer/>
-      <Header/> */}
+      {/* <Footer/> */}
+      <Header/>
       <Route path='/' component={LandingScreen} exact  />
       <Route path='/prints' component={PrintScreen}  />
       <Route path='/carousel' component={CarouselScreen}  />
       <Route path='/product/:id' component={ProductScreen}  />
-      {/* <SideNav /> */}
+      <SideNav />
       
       <Route path='/homescreen' component={HomeScreen} exact  />
       </Router>

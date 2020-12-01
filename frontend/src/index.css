@@ -31,16 +31,16 @@ body {
 
 .toplogo{
   position: absolute;
-  top: 50px;
-  left: 75px;
-  font-size: 50px;
+  top: 70px;
+  left: 110px;
+  font-size: 25px;
 }
 
 .bottomlogo{
   position: absolute;
   top: 90px;
-  left: 145px;
-  font-size: 50px;
+  left: 150px;
+  font-size: 25px;
 }
 
 .sidenav {
@@ -48,8 +48,8 @@ body {
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
   z-index: 1; /* Stay on top */
-  top: 150px; /* Stay at the top */
-  left: 50px;
+  top: 90px; /* Stay at the top */
+  left: -20px;
   background-color: #111; /* Black*/
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -58,10 +58,11 @@ body {
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 13px;
   color: #818181;
   display: block;
-  transition: 0.3s;
+  margin-left: 100px;
+  
 }
 
 
@@ -77,11 +78,6 @@ body {
   margin-top: 220px;
   
 }
-
-
-/* .imagecol {
-  overflow:hidden
-} */
 
 
 .landingimage {
@@ -125,17 +121,48 @@ body {
   color: white;
 }
 
-/* .b-refs-buttons{
-  position: absolute;
-  left: 100px;
-  top: 230px;
-} */
+
+
+
+.alice-carousel__wrapper{
+  margin-top: 130px;
+  margin-left: 360px;
+  margin-right: 200px;
+  width: 50%;
+}
 
 .prev-button {
   
-  margin-left: 300px;
+  margin-left: 630px;
+  margin-top: 20px;
+  background:none;
+  border:none;
+  outline: none;
+    
+    
+    cursor: pointer;
 }
 
 .next-button{
-  margin-left: 300px;
+  margin-left: 0px;
+  background:none;
+    border:none;
+    margin: none;
+    padding: none;
+    outline: none;
+}
+
+.carouselone{
+  width: 600px;
+  height: 600px;
+}
+
+.carouseltwo{
+  width: 600px;
+  height: 600px;
+}
+
+.carouselthree{
+  width: 600px;
+  height: 600px;
 }
