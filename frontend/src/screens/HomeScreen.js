@@ -7,7 +7,7 @@ const HomeScreen = () => {
 
    return (
     <div className="homeimage">
-     <Image src='../images/landing.jpg'/>
+     <Image src='../images/w67.jpg'/>
     </div>
   )
 }

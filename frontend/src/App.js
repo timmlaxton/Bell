@@ -9,6 +9,7 @@ import PrintScreen from './screens/PrintScreen'
 import ProductScreen from './screens/ProductScreen'
 import CarouselScreen from './screens/CarouselScreen'
 import ContactScreen from './screens/ContactScreen'
+import LoginScreen from './screens/LoginScreen'
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
       
       <Route path='/home' component={HomeScreen} exact  />
       <Route path='/contact' component={ContactScreen} exact  />
+      <Route path='/login' component={LoginScreen} exact  />
       </Router>
   )
 }
