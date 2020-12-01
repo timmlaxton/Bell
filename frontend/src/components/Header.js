@@ -3,7 +3,7 @@ import {LinkContainer} from 'react-router-bootstrap'
 
 const Header = () => {
   return (
-    <LinkContainer to='/homescreen'> 
+    <LinkContainer to='/home'> 
     <div> 
     <h1 className='toplogo' >ANDYBELL</h1>
       <h1 className='bottomlogo'>IMAGES</h1>

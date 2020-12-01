@@ -8,6 +8,7 @@ import HomeScreen from './screens/HomeScreen'
 import PrintScreen from './screens/PrintScreen'
 import ProductScreen from './screens/ProductScreen'
 import CarouselScreen from './screens/CarouselScreen'
+import ContactScreen from './screens/ContactScreen'
 
 const App = () => {
   return (
@@ -18,11 +19,12 @@ const App = () => {
       <Header/>
       <Route path='/' component={LandingScreen} exact  />
       <Route path='/prints' component={PrintScreen}  />
-      <Route path='/carousel' component={CarouselScreen}  />
+      <Route path='/photographs' component={CarouselScreen}  />
       <Route path='/product/:id' component={ProductScreen}  />
       <SideNav />
       
-      <Route path='/homescreen' component={HomeScreen} exact  />
+      <Route path='/home' component={HomeScreen} exact  />
+      <Route path='/contact' component={ContactScreen} exact  />
       </Router>
   )
 }

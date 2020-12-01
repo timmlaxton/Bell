@@ -7,7 +7,7 @@ const LandingScreen = () => {
     <div className="landingimage">
      <Image src='../images/landing.jpg'/>
      <div className="landingtext">ANDYBELLIMAGES</div>
-     <Link className='btn btn-light my-3' to='/homescreen'>ENTER</Link>
+     <Link className='button ' to='/home'>ENTER</Link>
     </div>
   )
 }
