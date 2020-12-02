@@ -30,11 +30,9 @@ return <>
         <h3 className="productname">{product.name}</h3>
         </ListGroup.Item>
         <ListGroup.Item>
-          <h3 className="producttype">{product.type}</h3>
+          <h3 className="producttype">{product.location}</h3>
         </ListGroup.Item>
-        <ListGroup.Item>
-          <h3 className="productlocation">{product.location}</h3>
-        </ListGroup.Item>
+        
       </ListGroup>
     </Col>
   </Row>

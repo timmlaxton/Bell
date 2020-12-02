@@ -10,9 +10,7 @@ const products = [
     _id: '2',
     name: 'Robert',
     image: '/images/w2.jpg',
-    type: 'Portrait',
     location: 'Glasgow',
-    category: 'Portrait',
   },
   // {
   //   _id: '3',
@@ -39,9 +37,8 @@ const products = [
     _id: '6',
     name: 'Adrien Barry',
     image: '/images/w66.jpg',
-    type: 'Portrait',
     location: 'Glasgow',
-    category: 'Portrait'
+    
   },
   // {
   //   _id: '7',
