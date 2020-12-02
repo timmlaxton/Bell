@@ -104,7 +104,7 @@ body {
 }
 
 
-.button {
+.landingbutton {
   position: absolute;
    top: 450px;
    left: 200px;
@@ -233,4 +233,77 @@ body {
   display: inline-block;
   margin-right: 2em;
   
+}
+
+.slider {
+  margin-top: 130px;
+  margin-left: 360px;
+  margin-right: 200px;
+  width: 50%;
+  height: auto;
+}
+
+
+.card-img-top{
+    display: inline-block;
+    vertical-align: middle;
+    float:none;
+    margin: 0 50px;
+}
+
+.slick-list {
+  width: 10000px;
+}
+
+.carousel-inner{
+  width:640px; 
+  height:360px;
+}
+
+.carousel {
+  width:640px; 
+  height:360px;
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 10%;
+}
+
+.buttons {
+  position: absolute;
+  text-decoration: none;
+   text-align: center;
+   top: 110px;
+   left: 400px;
+   color: black;
+}
+
+.productimage{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 110%;
+}
+
+.productname{
+  color: black;
+  font-size: 13px;
+}
+
+.producttype{
+  color: black;
+  font-size: 13px;
+}
+
+.productlocation {
+  color: black;
+  font-size: 13px;
 }

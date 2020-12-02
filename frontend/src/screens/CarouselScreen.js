@@ -9,18 +9,23 @@ import products from '../products'
 export default function CarouselScreen() {
   var settings = {
     dots: true,
+    arrows: true,
     infinite: true,
-    speed: 500,
+    speed: 900,
     slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    centerMode: true,
+    adaptiveHeight: false
   };
+
+  
+
   return (
-    <Slider {...settings} >
+    <Slider className="slider" {...settings} >
       
        {products.map((product) => (
-            <div> key={product.image}
             <Product product={product} />
-           </div>
+          
             ))}
            
     </Slider>

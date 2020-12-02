@@ -8,13 +8,23 @@ const ProductScreen = ({match}) => {
 
 
 return <>
-  <Link className='btn btn-dark my-3' to='/homescreen'>Go Back</Link>
+  
   <Row>
     <Col md={6}>
-      <Image src={product.image} alt={product.name} />
-    </Col>
-    <Col md={3}>
-
+      <Image className="productimage" src={product.image} alt={product.name} fluid />
+      </Col>
+      <Col md={3}>
+      <ListGroup variant='flush'>
+        <ListGroup.Item>
+        <h3 className="productname">{product.name}</h3>
+        </ListGroup.Item>
+        <ListGroup.Item>
+          <h3 className="producttype">{product.type}</h3>
+        </ListGroup.Item>
+        <ListGroup.Item>
+          <h3 className="productlocation">{product.location}</h3>
+        </ListGroup.Item>
+      </ListGroup>
     </Col>
   </Row>
 </>
