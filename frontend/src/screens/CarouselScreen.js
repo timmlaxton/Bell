@@ -35,7 +35,7 @@ export default function CarouselScreen() {
     <Slider className="slider" {...settings} >
       
        {products.map((product) => (
-            <Product product={product} />
+            <Product product={product} key={product} />
           
             ))}
            
