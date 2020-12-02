@@ -120,19 +120,6 @@ body {
 }
 
 
-/* Product Page */
-
-.btn {
-  position: absolute;
-  top: 90%;
-  left: 60%;
-  width: 150px;
-  height: 50px;
-  border:none;
-  background: rgba(255, 255, 255,0);
-  font-size: 25px;
-  color: white;
-}
 
 
 /* Homepage */
@@ -144,51 +131,6 @@ body {
   
 }
 
-
-/* Carousel */
-
-.alice-carousel__wrapper{
-  margin-top: 130px;
-  margin-left: 360px;
-  margin-right: 200px;
-  width: 50%;
-}
-
-.prev-button {
-  
-  margin-left: 630px;
-  margin-top: 20px;
-  background:none;
-  border:none;
-  outline: none;
-  cursor: pointer;
-}
-
-.next-button{
-  margin-left: 0px;
-  background:none;
-    border:none;
-    margin: none;
-    padding: none;
-    outline: none;
-}
-
-/* Carousel Images */
-
-.carouselone{
-  width: 600px;
-  height: 600px;
-}
-
-.carouseltwo{
-  width: 600px;
-  height: 600px;
-}
-
-.carouselthree{
-  width: 600px;
-  height: 600px;
-}
 
 /* Contact Page */
 
@@ -239,8 +181,7 @@ body {
   margin-top: 130px;
   margin-left: 360px;
   margin-right: 200px;
-  width: 50%;
-  height: auto;
+  
 }
 
 
@@ -249,33 +190,10 @@ body {
     vertical-align: middle;
     float:none;
     margin: 0 50px;
+    height: 210px;
+    
 }
 
-.slick-list {
-  width: 10000px;
-}
-
-.carousel-inner{
-  width:640px; 
-  height:360px;
-}
-
-.carousel {
-  width:640px; 
-  height:360px;
-}
-
-.slick-track
-{
-    position: relative;
-    top: 0;
-    left: 0;
-
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 10%;
-}
 
 .buttons {
   position: absolute;
@@ -286,12 +204,7 @@ body {
    color: black;
 }
 
-.productimage{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 110%;
-}
+
 
 .productname{
   color: black;
