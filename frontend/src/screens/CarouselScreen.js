@@ -12,7 +12,7 @@ export default function CarouselScreen() {
     dots: true,
     arrows: true,
     infinite: true,
-    speed: 900,
+    speed: 1800,
     slidesToShow: 1,
     slidesToScroll: 1,
     centerMode: true,

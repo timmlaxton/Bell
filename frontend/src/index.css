@@ -188,9 +188,8 @@ body {
 .card-img-top{
     display: inline-block;
     vertical-align: middle;
-    float:none;
-    margin: 0 50px;
-    height: 210px;
+    margin: 20px 50px;
+    height: 380px;
     
 }
 
@@ -219,4 +218,19 @@ body {
 .productlocation {
   color: black;
   font-size: 13px;
+}
+
+/* printscreen images */
+
+.col{
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  
+
+}
+
+.rowp{
+  
+  flex-direction: row;
+  flex-wrap: wrap;
 }

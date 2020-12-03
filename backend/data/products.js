@@ -40,6 +40,41 @@ const products = [
     location: 'Glasgow',
     
   },
+  {
+    
+    name: 'Guy',
+    image: '/images/w10.jpg',
+    location: 'Glasgow',
+    
+  },
+  {
+    
+    name: 'Trio',
+    image: '/images/w11.jpg',
+    location: 'Glasgow',
+    
+  },
+  {
+    
+    name: 'Trio2',
+    image: '/images/w12.jpg',
+    location: 'Glasgow',
+    
+  },
+  {
+    
+    name: 'Lassie',
+    image: '/images/w13.jpg',
+    location: 'Glasgow',
+    
+  },
+  {
+    
+    name: 'Blue face',
+    image: '/images/w14.jpg',
+    location: 'Glasgow',
+    
+  },
   // {
   //   
   //   name: 'Gary Beadle',
