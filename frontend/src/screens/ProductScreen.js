@@ -1,26 +1,28 @@
-import React, {useState, useEffect} from 'react'
-import axios from 'axios'
+import React, { useEffect} from 'react'
 import {Row, Col, Image, ListGroup} from 'react-bootstrap'
-
+import {useDispatch, useSelector} from 'react-redux'
+import Message from '../components/Message'
+import Loader from '../components/Loader'
+import {listProductDetails} from '../actions/productActions'
 
 
 const ProductScreen = ({match}) => {
-  const [product, setProduct] = useState({})
+  const dispatch = useDispatch()
+
+  const productDetails = useSelector(state => state.productDetails)
+  const {loading, error, product} = productDetails
+  
 
   useEffect(() => {
-    const fetchProduct = async () => {
-      const {data} = await axios.get(`/api/products/${match.params.id}`)
+    dispatch(listProductDetails(match.params.id))
+  }, [dispatch, match])
 
-      setProduct(data)
-    }
-
-    fetchProduct()
-  }, [match])
+  
 
 
 return <>
-  
-  <Row>
+  {loading ? <Loader/> : error ? <Message variant='danger'>{error}</Message> : (
+    <Row>
     <Col md={6}>
       <Image className="productimage" src={product.image} alt={product.name} fluid />
       </Col>
@@ -36,8 +38,10 @@ return <>
       </ListGroup>
     </Col>
   </Row>
-</>
-  
+  )}
+  </>
 }
+  
+
 
 export default ProductScreen
