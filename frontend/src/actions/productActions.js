@@ -6,7 +6,7 @@ import {
   
   
 
-} from '../constants/productContants'
+} from '../constants/productConstants'
 
 export const listProducts = () => async (dispatch) => {
    try {
