@@ -9,6 +9,7 @@ import PrintScreen from './screens/PrintScreen'
 import ProductScreen from './screens/ProductScreen'
 import CarouselScreen from './screens/CarouselScreen'
 import ContactScreen from './screens/ContactScreen'
+import LoginScreen from './screens/LoginScreen'
 
 
 const App = () => {
@@ -18,15 +19,17 @@ const App = () => {
      
       {/* <Footer/> */}
       <Header/>
+      <main className='py-3'> 
       <Route path='/' component={LandingScreen} exact  />
       <Route path='/prints' component={PrintScreen}  />
       <Route path='/photographs' component={CarouselScreen}  />
       <Route path='/product/:id' component={ProductScreen}  />
+      <Route path='/login' component={LoginScreen}  />
       <SideNav />
       
       <Route path='/home' component={HomeScreen} exact  />
       <Route path='/contact' component={ContactScreen} exact  />
-     
+      </main>
       </Router>
   )
 }
