@@ -7,6 +7,9 @@ import {listProductDetails} from '../actions/productActions'
 
 
 const ProductScreen = ({match}) => {
+  
+
+
   const dispatch = useDispatch()
 
   const productDetails = useSelector(state => state.productDetails)
