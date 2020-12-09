@@ -234,3 +234,12 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
 }
+
+.create-button {
+  left: 400px;
+
+}
+
+.image-title{
+  right: 150px;
+}
