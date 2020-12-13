@@ -1,6 +1,5 @@
 import axios from 'axios'
 import React, {useState, useEffect} from 'react'
-import {Link} from 'react-router-dom'
 import {Form, Button, Image} from 'react-bootstrap';
 import {useDispatch, useSelector} from 'react-redux'
 import Message from '../components/Message'
@@ -70,9 +69,8 @@ const ImageEditScreen = ({match, history }) => {
 
       const {data} = await axios.post('/api/upload', formData, config)
 
-      //setImage(data)
+  
       return data
-      //setUploading(false)
     } catch (error) {
       console.error(error)
       setUploading(false)
@@ -100,13 +98,15 @@ const ImageEditScreen = ({match, history }) => {
    
   return (
     <> 
-    <FormContainer>
-  <h1>{isCreateProductMode ? 'Create Product' : 'Edit Product'}</h1>
+
+    <div className=" qw"> 
+    <FormContainer >
+  <h1>{isCreateProductMode}</h1>
       {loadingUpdate && <Loader/>}
       {errorUpdate && <Message variant='danger'>{errorUpdate}</Message>}
       {loading ? <Loader/> : error ? <Message variant='danger'>{error}</Message> : (
           <Form onSubmit={submitHandler}>
-          <Form.Group controlId='name'>
+          <Form.Group controlId='name' className="" >
             <Form.Label>Name</Form.Label>
             <Form.Control 
             type='name' 
@@ -115,8 +115,7 @@ const ImageEditScreen = ({match, history }) => {
             onChange={(e) => setName(e.target.value)}
             ></Form.Control>
           </Form.Group>
-  
-         
+          
   
           <Form.Group controlId='image'>
             <Form.Label>Image</Form.Label>
@@ -137,19 +136,13 @@ const ImageEditScreen = ({match, history }) => {
 
           {imagePreview ? (<Image src={imagePreview} />) : null}
 
-         
-
-          
-
-          
-  
-          
           <Button type='submit' variant='primary' >
            {isCreateProductMode ? 'Create' : 'Update'}
           </Button>
         </Form>
       )}
     </FormContainer>
+    </div>
     </>
   )
 }

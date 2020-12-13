@@ -23,12 +23,12 @@ const logoutHandler = () => {
     <a href="/contact">contact</a>
     
     {userInfo ? (
-      <NavDropdown title={userInfo.name} id='username'>
+      <NavDropdown className="menu-list" title={userInfo.name} id='username'>
        
         <LinkContainer to="/productlist"> 
-        <NavDropdown.Item>Images</NavDropdown.Item >
+        <NavDropdown.Item className="menu-list">Images</NavDropdown.Item >
         </LinkContainer>
-        <NavDropdown.Item onClick={logoutHandler}>
+        <NavDropdown.Item className="menu-list" onClick={logoutHandler}>
           Logout
         </NavDropdown.Item>
       </NavDropdown>

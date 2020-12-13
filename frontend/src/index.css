@@ -1,6 +1,9 @@
 @import "react-alice-carousel/lib/alice-carousel.css";
 
 
+
+
+
 html, body, img {
   margin: 0;
   padding: 0;
@@ -74,9 +77,9 @@ body {
   border: none;
   width: 10vw;
   height: 5vh;
-  
-  
 }
+
+
 
 /* Print Screen Images */
 
@@ -99,6 +102,7 @@ body {
   position: absolute;
   left: 25%;
   top: 22%;
+  position: fixed;
 }
 
 .landingtext{
@@ -128,9 +132,6 @@ body {
    text-align: center;
   
 }
-
-
-
 
 /* Homepage */
 
@@ -188,43 +189,29 @@ body {
   
 }
 
-.slider {
-  margin-top: -560px;
-  margin-left: 260px;
-  margin-right: 200px;
-  border: none;
-  position: fixed;
-  box-sizing: border-box;
-  width: 700px;
-  height: 700px;
-  
-}
-
-.card-img-top {
-  margin: 10px 0px;
-  box-sizing: border-box;
-  width: 700px;
-  height: 700px;
-}
 
 section.section {
   background: transparent;
 }
 
-
-.card-img-top{
-    
-    margin: 0px 0px;
-    height: 700px;
-    width: 700px;
-    position: fixed;
-    box-sizing: border-box;
-    margin-top: -960px;
-    margin-left: 260px;
-    margin-right: 200px;
-    
+.slider
+{    position: relative;    
+      top: 150px;    
+      left: 400px;    
+      display: block;
+      width: 500px;
+      height: 800px;
 }
 
+.card-img-top{
+    margin: 0px 0px;
+    position: fixed;
+    margin-top: -760px;
+    margin-left: 260px;
+    margin-right: 200px;
+    border: none;
+    position: fixed;
+}
 
 .buttons {
   position: absolute;
@@ -234,8 +221,6 @@ section.section {
    left: 400px;
    color: black;
 }
-
-
 
 .productname{
   color: black;
@@ -257,8 +242,6 @@ section.section {
 .col{
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  
-
 }
 
 .rowp{
@@ -279,11 +262,12 @@ section.section {
 .table-scroll-y{
  position: relative;
  margin-top: 300px;
+ margin-left: 300px;
  overflow: auto;
 }
 
 .my-custom-scrollbar{
-  display: block
+  display: block;
 }
 
 .button {
@@ -291,3 +275,8 @@ section.section {
   margin-right: -80px;
 }
 
+.qw{
+  margin-top: -100px;
+ margin-left: -330px;
+
+}

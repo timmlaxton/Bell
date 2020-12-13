@@ -29,24 +29,11 @@ export default function CarouselScreen() {
   }, [])
 
   return (
-    <section className="section">
-    <div className="columns">
-        <div className="column is-10 is-offset-1">
-
-       
     <Slider className="slider" {...settings} >
-      
        {products.map((product) => (
             <Product product={product} key={product} />
-          
             ))}
-          
     </Slider>
-          
-    </div>
-    </div>
-    </section>
-  
   )
 }
 

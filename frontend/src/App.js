@@ -20,18 +20,18 @@ const App = () => {
      
       {/* <Footer/> */}
       <Header/>
-      <main className='py-3'> 
+      <SideNav />
+      
       <Route path='/' component={LandingScreen} exact  />
       <Route path='/photographs' component={CarouselScreen}  />
       <Route path='/product/:id' component={ProductScreen}  />
       <Route path="/productlist" component={ImageScreen}  />
       <Route path="/product/:id/edit"  component={ImageEditScreen} />
       <Route path='/login' component={LoginScreen}  />
-      <SideNav />
-      
       <Route path='/home' component={HomeScreen} exact  />
       <Route path='/contact' component={ContactScreen} exact  />
-      </main>
+     
+      
       </Router>
   )
 }
