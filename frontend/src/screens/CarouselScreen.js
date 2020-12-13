@@ -9,14 +9,11 @@ import Product from '../components/Product';
 
 export default function CarouselScreen() {
   var settings = {
-    dots: true,
-    arrows: true,
     infinite: true,
-    speed: 1800,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    centerMode: true,
-    adaptiveHeight: false
+    autoplay: true,
+    dots: false,
+    arrows: true,
+    autoplaySpeed: 8000
   };
 
   const [products, setProducts] = useState([])
@@ -32,15 +29,24 @@ export default function CarouselScreen() {
   }, [])
 
   return (
+    <section className="section">
+    <div className="columns">
+        <div className="column is-10 is-offset-1">
+
+       
     <Slider className="slider" {...settings} >
       
        {products.map((product) => (
             <Product product={product} key={product} />
           
             ))}
-           
+          
     </Slider>
-
+          
+    </div>
+    </div>
+    </section>
+  
   )
 }
 

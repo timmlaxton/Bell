@@ -100,8 +100,6 @@ const ImageEditScreen = ({match, history }) => {
    
   return (
     <> 
-      
-
     <FormContainer>
   <h1>{isCreateProductMode ? 'Create Product' : 'Edit Product'}</h1>
       {loadingUpdate && <Loader/>}
@@ -146,14 +144,11 @@ const ImageEditScreen = ({match, history }) => {
           
   
           
-          <Button type='submit' variant='primary'>
+          <Button type='submit' variant='primary' >
            {isCreateProductMode ? 'Create' : 'Update'}
           </Button>
         </Form>
-  
       )}
-      
-     
     </FormContainer>
     </>
   )

@@ -46,16 +46,18 @@ const ImageScreen = ({history, match}) => {
 
   return (
     <>
-    <Row className='align-items'>
-      <Col className="image-title">
-      <h1>Images</h1>
+    <div className="table-scroll-y my-custom-scrollbar"> 
+    <Row className='image-list-row'>
+      <Col className="image-title-col">
+     
       </Col>
-      <Col className='create-button'>
-        <Button className='my-3 light' onClick={createProductHandler}>
+      <div className='button'>
+        <Button type='submit' variant='primary' className="button"  onClick={createProductHandler}>
             <i className='fa fa-plus'></i> Add Image
         </Button>
-      </Col>
+      </div>
     </Row>
+    </div>
       
       {loadingCreate && <Loader/>}
       {errorCreate && <Message variant='danger'>{errorCreate}</Message> }

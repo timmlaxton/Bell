@@ -16,6 +16,7 @@ const logoutHandler = () => {
 
 
   return (
+    <div> 
     <div className="sidenav">
     <a href="/home">home</a>
     <a href="/photographs">photographs</a>
@@ -33,6 +34,7 @@ const logoutHandler = () => {
       </NavDropdown>
     ) : <a href="/login">login</a> }
 
+    </div>
   </div>
   )
 }

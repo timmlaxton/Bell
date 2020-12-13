@@ -1,15 +1,13 @@
 @import "react-alice-carousel/lib/alice-carousel.css";
 
-* {
-  box-sizing: border-box;
-}
-html, body, div, img {
+
+html, body, img {
   margin: 0;
   padding: 0;
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline;
+  padding: none;
 }
 body {
   line-height: 1;
@@ -22,6 +20,9 @@ body {
   top: 70px;
   left: 110px;
   font-size: 25px;
+  position: fixed;
+  width: 10vw;
+  height: 10vh;
 }
 
 .bottomlogo{
@@ -29,6 +30,9 @@ body {
   top: 90px;
   left: 150px;
   font-size: 25px;
+  position: fixed;
+  width: 10vw;
+  height: 10vh;
 }
 
 /* Footer */
@@ -47,7 +51,7 @@ body {
 /* Navbar */
 
 .sidenav {
-  height: 100%; /* 100% Full-height */
+  height: 10vh; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
   z-index: 1; /* Stay on top */
@@ -56,15 +60,21 @@ body {
   background-color: #111; /* Black*/
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  
+  
 }
 
 .sidenav a {
-  padding: 8px 8px 8px 32px;
+  padding: 5px 10px 8px 32px;
   text-decoration: none;
   font-size: 13px;
   color: #818181;
   display: block;
   margin-left: 100px;
+  border: none;
+  width: 10vw;
+  height: 5vh;
+  
   
 }
 
@@ -126,8 +136,9 @@ body {
 
 .homeimage {
   position: absolute;
-  left: 25%;
-  top: 12%;
+  left: 28%;
+  top: 22%;
+  position: fixed;
   
 }
 
@@ -178,18 +189,39 @@ body {
 }
 
 .slider {
-  margin-top: 130px;
-  margin-left: 360px;
+  margin-top: -560px;
+  margin-left: 260px;
   margin-right: 200px;
+  border: none;
+  position: fixed;
+  box-sizing: border-box;
+  width: 700px;
+  height: 700px;
   
+}
+
+.card-img-top {
+  margin: 10px 0px;
+  box-sizing: border-box;
+  width: 700px;
+  height: 700px;
+}
+
+section.section {
+  background: transparent;
 }
 
 
 .card-img-top{
-    display: inline-block;
-    vertical-align: middle;
-    margin: 20px 50px;
-    height: 380px;
+    
+    margin: 0px 0px;
+    height: 700px;
+    width: 700px;
+    position: fixed;
+    box-sizing: border-box;
+    margin-top: -960px;
+    margin-left: 260px;
+    margin-right: 200px;
     
 }
 
@@ -243,3 +275,19 @@ body {
 .image-title{
   right: 150px;
 }
+
+.table-scroll-y{
+ position: relative;
+ margin-top: 300px;
+ overflow: auto;
+}
+
+.my-custom-scrollbar{
+  display: block
+}
+
+.button {
+  margin-top: -05px;
+  margin-right: -80px;
+}
+
