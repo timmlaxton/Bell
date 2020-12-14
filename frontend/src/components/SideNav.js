@@ -18,7 +18,6 @@ const logoutHandler = () => {
   return (
     <div> 
     <div className="sidenav">
-    <a href="/home">home</a>
     <a href="/photographs">photographs</a>
     <a href="/contact">contact</a>
     
