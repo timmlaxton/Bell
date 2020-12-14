@@ -119,7 +119,7 @@ body {
 
 
 .landingbutton {
-  position: absolute;
+   position: absolute;
    top: 450px;
    left: 200px;
    width: 100%;
@@ -195,7 +195,7 @@ section.section {
 }
 
 .slider
-{    position: relative;    
+{    position: fixed;    
       top: 150px;    
       left: 400px;    
       display: block;
@@ -203,15 +203,17 @@ section.section {
       height: 800px;
 }
 
-.card-img-top{
+ /* .card-img-top{
     margin: 0px 0px;
     position: fixed;
-    margin-top: -760px;
+    margin-top: 200px;
     margin-left: 260px;
     margin-right: 200px;
     border: none;
     position: fixed;
-}
+    width: 50%;
+    height: 50%;
+} */
 
 .buttons {
   position: absolute;
@@ -220,7 +222,7 @@ section.section {
    top: 110px;
    left: 400px;
    color: black;
-}
+} */
 
 .productname{
   color: black;
@@ -277,6 +279,6 @@ section.section {
 
 .qw{
   margin-top: -100px;
- margin-left: -330px;
+  margin-left: -330px;
 
 }

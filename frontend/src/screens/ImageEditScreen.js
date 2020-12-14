@@ -125,6 +125,7 @@ const ImageEditScreen = ({match, history }) => {
             value={imageUrl} 
             onChange={(e) => setImageUrl(e.target.value)}
             ></Form.Control>
+            <br/>
 
           <Form.File 
             id='image-file' 
@@ -136,7 +137,7 @@ const ImageEditScreen = ({match, history }) => {
 
           {imagePreview ? (<Image src={imagePreview} />) : null}
 
-          <Button type='submit' variant='primary' >
+          <Button type='submit' variant='primary-light' >
            {isCreateProductMode ? 'Create' : 'Update'}
           </Button>
         </Form>
