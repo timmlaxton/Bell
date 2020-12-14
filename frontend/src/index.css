@@ -203,17 +203,7 @@ section.section {
       height: 800px;
 }
 
- /* .card-img-top{
-    margin: 0px 0px;
-    position: fixed;
-    margin-top: 200px;
-    margin-left: 260px;
-    margin-right: 200px;
-    border: none;
-    position: fixed;
-    width: 50%;
-    height: 50%;
-} */
+
 
 .buttons {
   position: absolute;
@@ -281,4 +271,10 @@ section.section {
   margin-top: -100px;
   margin-left: -330px;
 
+}
+
+.btn{
+  margin-left: 85px;
+  margin-top: 10px;
+  color: #818181;
 }
