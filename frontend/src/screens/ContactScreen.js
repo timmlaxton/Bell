@@ -1,20 +1,31 @@
 import React from 'react'
+import { Container } from 'react-bootstrap';
 
 const ContactScreen = () => {
   return (
+    <Container> 
     <div>
+
       <h1 className="email">info@andbellimages.com</h1>
       <h1 className="phone">+44(0)7811843930</h1>
-    <div className="container-header">
-      <div className="icons"> 
-        <a href="https://www.facebook.com/andybellimages/" ><i name="fab fa-facebook-f" ></i></a>
-        <a href="https://www.instagram.com/andybellimages/?hl=en" ><i name="fab fa-instagram" ></i></a>
-        <a href="https://twitter.com/andybellimages?lang=en" ><i name="fab fa-twitter" ></i></a>
-        <a href="https://uk.linkedin.com/in/andy-bell-a8124184" ><i name="fab fa-linkedin" ></i></a>
-      </div>
+    
+    
+     <div>   
+      <i className="fab fa-facebook-f"></i>
+      </div> 
+     <div>   
+      <i className="fab fa-twitter"></i>
+      </div> 
+      <div>   
+      <i className="fab fa-instagram"></i>
+      </div> 
+      <div>   
+      <i className="fab fa-linkedin"></i>
+      </div> 
+   
     </div>
+    </Container>
 
-    </div>
   )
 }
 

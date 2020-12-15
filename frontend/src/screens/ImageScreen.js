@@ -49,7 +49,6 @@ const ImageScreen = ({history, match}) => {
     <div className="table-scroll-y my-custom-scrollbar"> 
     <Row className='image-list-row'>
       <Col className="image-title-col">
-     
       </Col>
       <div className='button'>
         <Button type='submit' variant='primary' className="button"  onClick={createProductHandler}>
@@ -69,18 +68,18 @@ const ImageScreen = ({history, match}) => {
         <Table striped bordered hover responsive className='table-sm'>
           <thead>
             <tr>
-              <th>ID</th>
+              
               <th>NAME</th>
-              <></>
+             
             </tr>
           </thead>
           <tbody>
             {products.map(product => (
               <tr key={product._id}>
-                <td>{product._id}</td>
+                
                 <td>{product.name}</td>
                 
-                <td>
+                <td className="imagetable">
                   <LinkContainer to={`/product/${product._id}/edit`}>
                     <Button variant='light' className='btn-sm'>
                       <i className='fas fa-edit'></i>

@@ -1,4 +1,5 @@
 import React, { useEffect} from 'react'
+import {Link} from 'react-router-dom'
 import {Row, Col, Image, ListGroup} from 'react-bootstrap'
 import {useDispatch, useSelector} from 'react-redux'
 import Message from '../components/Message'
@@ -24,6 +25,9 @@ const ProductScreen = ({match}) => {
 
 
 return <>
+  <Link to='/productlist' className=' btn'>
+        Go Back
+      </Link>
   {loading ? <Loader/> : error ? <Message variant='danger'>{error}</Message> : (
     <Row>
     <Col md={6}>

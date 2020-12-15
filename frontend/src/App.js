@@ -15,12 +15,14 @@ import LoginScreen from './screens/LoginScreen'
 
 const App = () => {
   return (
-   
-      <Router>
-     
-      {/* <Footer/> */}
-      <Header/>
+    <div> 
+    
+    <Router>
+    <Header/>
       <SideNav />
+     
+       
+      
       
       <Route path='/' component={LandingScreen} exact  />
       <Route path='/photographs' component={CarouselScreen}  />
@@ -31,8 +33,9 @@ const App = () => {
       <Route path='/home' component={HomeScreen} exact  />
       <Route path='/contact' component={ContactScreen} exact  />
      
-      
+      {/* <Footer/> */}
       </Router>
+      </div>
   )
 }
 
