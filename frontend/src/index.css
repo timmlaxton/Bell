@@ -168,7 +168,7 @@ body {
   position: absolute;
   width: 100px;
   height: 50px;
-  top: 35%;
+  top: 38%;
   left: 47%;
   margin-left: -50px; /* margin is -0.5 * dimension */
   margin-top: 80px; 
@@ -181,7 +181,7 @@ body {
   position: absolute;
   width: 100px;
   height: 50px;
-  top: 35%;
+  top: 38%;
   left: 52%;
   margin-left: -50px; /* margin is -0.5 * dimension */
   margin-top: 80px; 
@@ -194,7 +194,7 @@ body {
   position: absolute;
   width: 100px;
   height: 50px;
-  top: 35%;
+  top: 38%;
   left: 57%;
   margin-left: -50px; /* margin is -0.5 * dimension */
   margin-top: 80px; 
@@ -207,7 +207,7 @@ body {
   position: absolute;
   width: 100px;
   height: 50px;
-  top: 35%;
+  top: 38%;
   left: 62%;
   margin-left: -50px; /* margin is -0.5 * dimension */
   margin-top: 80px; 
@@ -303,6 +303,8 @@ section.section {
   margin-top: -05px;
   margin-right: -80px;
 }
+
+
 
 .qw{
   margin-top: -100px;

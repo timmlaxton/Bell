@@ -11,16 +11,24 @@ const ContactScreen = () => {
     
     
      <div>   
-      <i className="fab fa-facebook-f"></i>
+       <a href={"https://www.facebook.com/andybellimages/"}>
+       <i className="fab fa-facebook-f" ></i>
+       </a>
       </div> 
      <div>   
+       <a href={"https://twitter.com/andybellimages?lang=en"}> 
       <i className="fab fa-twitter"></i>
+      </a>
       </div> 
       <div>   
+      <a href={"https://www.instagram.com/andybellimages/?hl=en"}> 
       <i className="fab fa-instagram"></i>
+      </a>
       </div> 
-      <div>   
+      <div>  
+      <a href={"https://uk.linkedin.com/in/andy-bell-a8124184"}>  
       <i className="fab fa-linkedin"></i>
+      </a>
       </div> 
    
     </div>
