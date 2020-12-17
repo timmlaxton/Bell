@@ -5,15 +5,39 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Product from '../components/Product';
 
+const NextArrow = (props) => {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "block"}}
+      onClick={onClick}
+    ><div>Next</div>
+    </div>
+  );
+}
 
+const PrevArrow = (props) => {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "block" }}
+      onClick={onClick}
+    ><div>Previous</div>
+    </div>
+  );
+}
 
 export default function CarouselScreen() {
   var settings = {
     infinite: true,
-    autoplay: true,
+    autoplay: false,
     dots: false,
     arrows: true,
-    autoplaySpeed: 8000
+    autoplaySpeed: 8000,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />
   };
 
   const [products, setProducts] = useState([])

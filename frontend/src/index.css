@@ -2,10 +2,10 @@
 
 @import url(//db.onlinewebfonts.com/c/8107cd50f291793820349da55432e959?family=Akzidenz-Grotesk+BQ);
 
-
-@font-face {font-family: "Akzidenz-Grotesk BQ"; src: url("//db.onlinewebfonts.com/t/8107cd50f291793820349da55432e959.eot"); src: url("//db.onlinewebfonts.com/t/8107cd50f291793820349da55432e959.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/8107cd50f291793820349da55432e959.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/8107cd50f291793820349da55432e959.woff") format("woff"), url("//db.onlinewebfonts.com/t/8107cd50f291793820349da55432e959.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/8107cd50f291793820349da55432e959.svg#Akzidenz-Grotesk BQ") format("svg"); }
-
-
+@font-face {
+  font-family: "Akzidenz-Grotesk BQ"; 
+  src: url("//db.onlinewebfonts.com/t/8107cd50f291793820349da55432e959.eot"); 
+  src: url("//db.onlinewebfonts.com/t/8107cd50f291793820349da55432e959.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/8107cd50f291793820349da55432e959.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/8107cd50f291793820349da55432e959.woff") format("woff"), url("//db.onlinewebfonts.com/t/8107cd50f291793820349da55432e959.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/8107cd50f291793820349da55432e959.svg#Akzidenz-Grotesk BQ") format("svg"); }
 
 
 body {
@@ -32,6 +32,11 @@ body {
   position: fixed;
   width: 10vw;
   height: 10vh;
+}
+
+.toplogo,
+.bottomlogo {
+  font-family: 'Akzidenz-Grotesk BQ';
 }
 
 /* Footer */
@@ -115,7 +120,6 @@ body {
    position: absolute;
    top: 450px;
    left: 200px;
-   width: 100%;
    margin: 0 auto;
    width: 300px;
    height: 50px;
@@ -221,18 +225,56 @@ section.section {
 }
 
 .slick-slider
-{     position: fixed;    
+{     position: relative;    
       top: 150px;    
       left: 400px;    
       
       width: 500px;
-      height: 800px;
+      height: 400px;
+}
+
+.slick-track {
+  height: 400px;
+}
+
+.slick-slide a {
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider .slick-arrow {
+  font-size: 16px;
+  line-height: 1.2;
+  color: #333;
+  width: auto;
+  height: 40px;
+  top: revert;
+  bottom: -75px;
+}
+
+.slider .slick-arrow:hover {
+  color: #555;
+}
+
+.slider .slick-next::before,
+.slider .slick-prev::before {
+  content: '';
+}
+
+.slick-slide img {
+  display: block;
+  max-height: 100%;
+  height: auto;
+  max-width: 100%;
+  margin: 0 auto;
+  width: auto;
 }
 
 .img-card-top{
   position: absolute
 }
-
 
 .buttons {
   position: absolute;
