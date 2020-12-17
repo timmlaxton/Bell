@@ -1,9 +1,12 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios'
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Product from '../components/Product';
+import SideNav from '../components/SideNav'
+import Header from '../components/Header';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 
 const NextArrow = (props) => {
   const { className, style, onClick } = props;
@@ -53,11 +56,16 @@ export default function CarouselScreen() {
   }, [])
 
   return (
+    <>
+    <Header/>
+    <SideNav />
     <Slider className="slider" {...settings} >
        {products.map((product) => (
             <Product product={product} key={product} />
             ))}
+    
     </Slider>
+    </>
   )
 }
 

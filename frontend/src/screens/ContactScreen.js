@@ -1,8 +1,13 @@
 import React from 'react'
 import { Container } from 'react-bootstrap';
+import SideNav from '../components/SideNav'
+import Header from '../components/Header';
 
 const ContactScreen = () => {
   return (
+    <>
+     <Header/>
+    <SideNav />
     <Container> 
     <div>
 
@@ -33,7 +38,7 @@ const ContactScreen = () => {
    
     </div>
     </Container>
-
+    </>
   )
 }
 
