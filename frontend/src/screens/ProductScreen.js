@@ -6,6 +6,8 @@ import Message from '../components/Message'
 import Loader from '../components/Loader'
 import {listProductDetails} from '../actions/productActions'
 
+// const isCreateProductMode = match.path.includes('/productlist/create')
+
 
 const ProductScreen = ({match}) => {
   
@@ -25,7 +27,7 @@ const ProductScreen = ({match}) => {
 
 
 return <>
-  <Link to='/productlist' className=' btn'>
+  <Link to="/photographs" className=' btn'>
         Go Back
       </Link>
   {loading ? <Loader/> : error ? <Message variant='danger'>{error}</Message> : (
